@@ -9,3 +9,21 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+### HTML (character creator)
+Inside a single form, we need:
+    -an input
+        -grabs user name
+    -a radio button
+        -grabs user class
+    -submit button
+        -to run the code
+## Event
+On clicking submit
+    -grab all data
+        -put data in local storage
+            -completed quests
+            -gold
+            -hp
+            -name
+            -race
+            -class
