@@ -17,7 +17,9 @@ form.addEventListener('submit', (event) => {
         class: hero,
         completed: {},
         hp: 35,
-        gold: 0
+        ac: 10,
+        atk: 5,
+        gold: 25
     };
     setUser(userObj);
 

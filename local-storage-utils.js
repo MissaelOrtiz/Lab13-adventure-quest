@@ -24,6 +24,18 @@ export function changeHp(someHPValue) {
     setUser(user);
 }
 
+export function changeAc(someACValue) {
+    const user = getUser();
+    user.ac = user.ac + someACValue;
+    setUser(user);
+}
+
+export function changeAtk(someATKValue) {
+    const user = getUser();
+    user.atk = user.atk + someATKValue;
+    setUser(user);
+}
+
 export function completeQuest(questId) {
     const user = getUser();
     user.completed[questId] = true;

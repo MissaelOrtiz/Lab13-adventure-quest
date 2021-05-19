@@ -1,6 +1,6 @@
 import quests from '../data/quests.js';
 import { findById } from '../utils.js';
-import { changeGold, changeHp } from '../local-storage-utils.js';
+import { changeGold, changeHp, changeAc, changeAtk } from '../local-storage-utils.js';
 
 const main = document.querySelector('.main-section');
 
@@ -13,13 +13,12 @@ const quest = findById(quests, questId);
 const h1 = document.createElement('h1');
 const img = document.createElement('img');
 const p = document.createElement('p');
-
 const form = document.createElement('form');
-const button = document.createElement('button');
-button.textContent = 'Make the choice!';
 h1.textContent = quest.title;
-img.src = `../assets/${quest.img}`;
+img.src = `../assets/${quest.image}`;
 p.textContent = quest.description;
+
+
 for (let choice of quest.choices) {
     const label = document.createElement('label');
     const input = document.createElement('input');
@@ -29,6 +28,9 @@ for (let choice of quest.choices) {
     label.append(choice.description, input);
     form.append(label);
 }
+
+const button = document.createElement('button');
+button.textContent = 'Make the choice!';
 form.append(button);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -37,6 +39,8 @@ form.addEventListener('submit', (e) => {
     const selectedChoice = findById(quest.choices, choiceId);
     changeGold(selectedChoice.gold);
     changeHp(selectedChoice.hp);
+    changeAc(selectedChoice.ac);
+    changeAtk(selectedChoice.atk);
     const resultsDiv = document.createElement('div');
     const redirectButton = document.createElement('button');
     redirectButton.textContent = 'continue with my quest!';
@@ -45,9 +49,9 @@ form.addEventListener('submit', (e) => {
         
     });
     resultsDiv.textContent = selectedChoice.result;
-    resultsDiv.appendChild(button);
+    resultsDiv.appendChild(redirectButton);
     form.remove();
     main.append(resultsDiv);
     
 });
-main.append(h1, img, p);
+main.append(h1, img, p, form);

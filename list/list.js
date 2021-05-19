@@ -1,13 +1,13 @@
 import quests from '../data/quests.js';
-import { userCompletedAllQuests } from '../local-storage-utils';
+import { userCompletedAllQuests } from '../local-storage-utils.js';
 if (userCompletedAllQuests()) {
     window.location = '../final';
 }
 const ul = document.querySelector('#quests');
 
 for (let quest of quests) {
-    const li = document.createAttribute('li');
-    const a = document.createAttribute('a');
+    const li = document.createElement('li');
+    const a = document.createElement('a');
     a.href = `../quest/?id=${quest.id}`;
     a.textContent = quest.title;
     li.append(a);
