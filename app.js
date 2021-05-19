@@ -1,3 +1,5 @@
+import { setUser } from './local-storage-utils.js';
+
 // import functions and grab DOM elements
 const form = document.getElementById('the-stats');
 // initialize state
@@ -9,6 +11,17 @@ form.addEventListener('submit', (event) => {
     const user = formData.get('username');
     const hero = formData.get('hero');
     
+
+    const userObj = {
+        name: user,
+        class: hero,
+        completed: {},
+        hp: 35,
+        gold: 0
+    };
+    setUser(userObj);
+
+
     window.location = './map';
 });
   // get user input

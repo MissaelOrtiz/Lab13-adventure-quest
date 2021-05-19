@@ -27,3 +27,17 @@ On clicking submit
             -name
             -race
             -class
+
+### HTML (quest map)
+Need some kind of container <ul></ul>
+    - acts as a place to inject our quests
+    - we just need to go through our quest data and render out links to each quest.
+
+### HTML (quest page)
+Need some container to hold things <div>
+    - dynamically (JS) generate content
+## Event
+On submit (when user picks an option)
+    -show result of choice
+    -update localstorage (new gold, new hp, new quest)
+    -redirect to quest map
