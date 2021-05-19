@@ -22,7 +22,7 @@ form.addEventListener('submit', (event) => {
     setUser(userObj);
 
 
-    window.location = './map';
+    window.location = './list';
 });
   // get user input
   // use user input to update state 

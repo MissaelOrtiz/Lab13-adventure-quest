@@ -1,3 +1,5 @@
+import quests from './data/quests.js';
+
 export function getUser() {
     const stringyuser = localStorage.getItem('USER');
     if (!stringyuser) return {};
@@ -24,6 +26,21 @@ export function changeHp(someHPValue) {
 
 export function completeQuest(questId) {
     const user = getUser();
-    // user.completed
+    user.completed[questId] = true;
     setUser(user);
+}
+
+export function userCompletedAllQuests() {
+    const user = getUser();
+    // return Object.keys(user.completed).length === quests.length;
+    for (let quest of quests) {
+        if (!user.completed[quest.id]) return false;
+    }
+    return true;
+}
+
+export function userDied() {
+    const user = getUser();
+    if (user.hp <= 0) return true;
+    return false;
 }
