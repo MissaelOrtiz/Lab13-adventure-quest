@@ -18,6 +18,11 @@ export function changeGold(someGoldValue) {
     setUser(user);
 }
 
+export function emptyGold() {
+    const user = getUser();
+    return user.gold;
+}
+
 export function changeHp(someHPValue) {
     const user = getUser();
     user.hp = user.hp + someHPValue;
