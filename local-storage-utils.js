@@ -1,4 +1,3 @@
-import quests from './data/quests.js';
 
 export function getUser() {
     const stringyuser = localStorage.getItem('USER');
@@ -47,14 +46,14 @@ export function completeQuest(questId) {
     setUser(user);
 }
 
-export function userCompletedAllQuests() {
-    const user = getUser();
-    // return Object.keys(user.completed).length === quests.length;
-    for (let quest of quests) {
-        if (!user.completed[quest.id]) return false;
-    }
-    return true;
-}
+// export function userCompletedAllQuests() {
+//     const user = getUser();
+//     // return Object.keys(user.completed).length === quests.length;
+//     for (let quest of quests) {
+//         if (!user.completed[quest.id]) return false;
+//     }
+//     return true;
+// }
 
 export function userDied() {
     const user = getUser();
