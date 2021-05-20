@@ -3,9 +3,10 @@ const Goblin = {
     id: 1,
     name: 'Goblin',
     description: 'Gross dude',
-    atk: 5,
+    atk: 6,
     ac: 5,
-    gold: 2,   
+    gold: 2,
+    image: 'goblin.png',
 };
 
 const Wolf = {
@@ -14,7 +15,8 @@ const Wolf = {
     description: 'Carnivorous Canine',
     atk: 7,
     ac: 10,
-    gold: 5,   
+    gold: 5,
+    image: 'wolf.jpeg',
 };
 
 const DarkWizard = {
@@ -23,7 +25,8 @@ const DarkWizard = {
     description: 'A Wizard! But not the good kind.',
     atk: 20,
     ac: 7,
-    gold: 25,   
+    gold: 25, 
+    image: 'wizard.png',
 };
 
 const ButtSpider = {
@@ -32,7 +35,8 @@ const ButtSpider = {
     description: 'Check your 6',
     atk: 9,
     ac: 9,
-    gold: 15,   
+    gold: 15,  
+    image: 'spider-butt.jpg',
 };
 
 const Wyvern = {
@@ -42,7 +46,7 @@ const Wyvern = {
     atk: 12,
     ac: 10,
     gold: 20,
-
+    image: 'wyvern.png',
 };
 
 const monsters = [Goblin, Wolf, DarkWizard, ButtSpider, Wyvern];
