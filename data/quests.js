@@ -1,4 +1,6 @@
 import { emptyGold } from '../local-storage-utils.js';
+import { getMonster } from '../render-monster-utils.js';
+
 
 const Crossroads = {
     id: 'quest1',
@@ -184,55 +186,55 @@ const Redcap = {
     }]
 };
 
-// const Monsters = {
-//     id: 'quest5',
-//     title: 'Raving Redcap Rumble',
-//     map: {
-//         // SORT THIS OUT LATER
-//         top: '89%',
-//         left: '44%'
-//     },
-//     // sort this out later
-//     image: 'redcap.jpg',
-//     description: `
-//         Your path is blocked by a crumbly, decaying cabin that is guarded by a gang of redcaps who excitedly chitter and cackle at you from atop the roof. 'Pass our test to continue on the path,' screams one particulalry ugly redcap. The other redcaps start yeeting rotten fruit at you, which you narrowly dodge as they all repeatedly shout 'EAT IT!'
-//     `,
-//     choices: [{
-//         id: 'EATIT',
-//         description: 'Eat the rotten fruit',
-//         result: `
-//             Well, you've had worse! You eat the rotten fruit, getting more and more nauseous with each piece. You yarf off on their doorstep, and they taunt you and let you pass, a little worse for wear.
-//         `,
-//         hp: -5,
-//         ac: 0,
-//         atk: 0,
-//         gold: 0
-//     }, {
-//         id: 'FIGHT',
-//         description: 'Challenge these punks to a battle',
-//         result: `
-//             You dispatch them easily, but they did stab you in the shins a few times. To add insult to their injuries, you rob that jerk who first yelled at you. You gain 10 gold plus a neat hat!
-//         `,
-//         hp: -5,
-//         ac: 0,
-//         atk: 0,
-//         gold: 10
-//     }, {
-//         id: 'FLEE',
-//         description: 'Ignore these bozos and find another path',
-//         result: `
-//             You think you are sooooo clever, finding a new path. Unfortunately they saw that coming. You get ambushed by another gang of redcaps, who munge your gold. All of it. Sucker.
-//         `,
-//         hp: 0,
-//         ac: 0,
-//         atk: 2,
-//         gold: -`${emptyGold()}`
-//     }]
-// };
+const Monsters = {
+    id: 'quest5',
+    title: 'A foe approaches',
+    current: getMonster(),
+    map: {
+        // SORT THIS OUT LATER
+        top: '89%',
+        left: '44%'
+    },
+    image: this.current.image,
+    description: 
+    this.current.description
+    ,
+    choices: [{
+        id: 'EATIT',
+        description: 'Eat the rotten fruit',
+        result: `
+            Well, you've had worse! You eat the rotten fruit, getting more and more nauseous with each piece. You yarf off on their doorstep, and they taunt you and let you pass, a little worse for wear.
+        `,
+        hp: -5,
+        ac: 0,
+        atk: 0,
+        gold: 0
+    }, {
+        id: 'FIGHT',
+        description: 'Challenge these punks to a battle',
+        result: `
+            You dispatch them easily, but they did stab you in the shins a few times. To add insult to their injuries, you rob that jerk who first yelled at you. You gain 10 gold plus a neat hat!
+        `,
+        hp: -5,
+        ac: 0,
+        atk: 0,
+        gold: 10
+    }, {
+        id: 'FLEE',
+        description: 'Ignore these bozos and find another path',
+        result: `
+            You think you are sooooo clever, finding a new path. Unfortunately they saw that coming. You get ambushed by another gang of redcaps, who munge your gold. All of it. Sucker.
+        `,
+        hp: 0,
+        ac: 0,
+        atk: 2,
+        gold: -`${emptyGold()}`
+    }]
+};
 
 
 
 
 
-const quests = [Crossroads, TavernFight, Healer, Redcap];
+const quests = [Crossroads, TavernFight, Healer, Redcap, Monsters];
 export default quests;
