@@ -1,5 +1,3 @@
-import { emptyGold } from '../local-storage-utils.js';
-
 const Crossroads = {
     id: 'quest1',
     title: 'A Fey Friend at the Crossroads',
@@ -92,147 +90,12 @@ const TavernFight = {
     }]
 };
 
-const Healer = {
-    id: 'quest3',
-    title: 'The good witch of Barheim offers to heal you!',
-    map: {
-        // SORT THIS OUT LATER
-        top: '89%',
-        left: '44%'
-    },
-    // sort this out later
-    image: 'Healer.jpg',
-    description: `
-        You find a large cottage mounted ontop of giant chicken legs, a cluster of grey clouds decorating the top of the cottage. Entering the house, you are greeted by Amelia Silverwind, the good witch and her familiar, Vaati the jacklope. 'Hello! Won't you look at my wares?'
-    `,
-    choices: [{
-        id: 'SMALL',
-        description: 'This potion is a small elixir of life [5 gold]',
-        result: `
-            You drink the elixir, your minor wounds regenerate at a rapid pace!
-        `,
-        hp: 5,
-        ac: 0,
-        atk: 0,
-        gold: -5
-    }, {
-        id: 'MEDIUM',
-        description: 'This potion is a medium elixir of life [10 gold]',
-        result: `
-            You drink the elixir, your moderate wounds regenerate at a rapid pace!
-        `,
-        hp: 10,
-        ac: 0,
-        atk: 0,
-        gold: -10
-    }, {
-        id: 'MAJOR',
-        description: 'This potion is a major elixir of life [15 gold]',
-        result: `
-            You drink the elixir, your severe wounds regenerate at a rapid pace!
-        `,
-        hp: 15,
-        ac: 0,
-        atk: 2,
-        gold: -15
-    }]
-};
-
-const Redcap = {
-    id: 'quest4',
-    title: 'Raving Redcap Rumble',
-    map: {
-        // SORT THIS OUT LATER
-        top: '89%',
-        left: '44%'
-    },
-    // sort this out later
-    image: 'redcap.jpg',
-    description: `
-        Your path is blocked by a crumbly, decaying cabin that is guarded by a gang of redcaps who excitedly chitter and cackle at you from atop the roof. 'Pass our test to continue on the path,' screams one particulalry ugly redcap. The other redcaps start yeeting rotten fruit at you, which you narrowly dodge as they all repeatedly shout 'EAT IT!'
-    `,
-    choices: [{
-        id: 'EATIT',
-        description: 'Eat the rotten fruit',
-        result: `
-            Well, you've had worse! You eat the rotten fruit, getting more and more nauseous with each piece. You yarf off on their doorstep, and they taunt you and let you pass, a little worse for wear.
-        `,
-        hp: -5,
-        ac: 0,
-        atk: 0,
-        gold: 0
-    }, {
-        id: 'FIGHT',
-        description: 'Challenge these punks to a battle',
-        result: `
-            You dispatch them easily, but they did stab you in the shins a few times. To add insult to their injuries, you rob that jerk who first yelled at you. You gain 10 gold plus a neat hat!
-        `,
-        hp: -5,
-        ac: 0,
-        atk: 0,
-        gold: 10
-    }, {
-        id: 'FLEE',
-        description: 'Ignore these bozos and find another path',
-        result: `
-            You think you are sooooo clever, finding a new path. Unfortunately they saw that coming. You get ambushed by another gang of redcaps, who munge your gold. All of it. Sucker.
-        `,
-        hp: 0,
-        ac: 0,
-        atk: 2,
-        gold: -`${emptyGold()}`
-    }]
-};
-
-// const Monsters = {
-//     id: 'quest5',
-//     title: 'Raving Redcap Rumble',
-//     map: {
-//         // SORT THIS OUT LATER
-//         top: '89%',
-//         left: '44%'
-//     },
-//     // sort this out later
-//     image: 'redcap.jpg',
-//     description: `
-//         Your path is blocked by a crumbly, decaying cabin that is guarded by a gang of redcaps who excitedly chitter and cackle at you from atop the roof. 'Pass our test to continue on the path,' screams one particulalry ugly redcap. The other redcaps start yeeting rotten fruit at you, which you narrowly dodge as they all repeatedly shout 'EAT IT!'
-//     `,
-//     choices: [{
-//         id: 'EATIT',
-//         description: 'Eat the rotten fruit',
-//         result: `
-//             Well, you've had worse! You eat the rotten fruit, getting more and more nauseous with each piece. You yarf off on their doorstep, and they taunt you and let you pass, a little worse for wear.
-//         `,
-//         hp: -5,
-//         ac: 0,
-//         atk: 0,
-//         gold: 0
-//     }, {
-//         id: 'FIGHT',
-//         description: 'Challenge these punks to a battle',
-//         result: `
-//             You dispatch them easily, but they did stab you in the shins a few times. To add insult to their injuries, you rob that jerk who first yelled at you. You gain 10 gold plus a neat hat!
-//         `,
-//         hp: -5,
-//         ac: 0,
-//         atk: 0,
-//         gold: 10
-//     }, {
-//         id: 'FLEE',
-//         description: 'Ignore these bozos and find another path',
-//         result: `
-//             You think you are sooooo clever, finding a new path. Unfortunately they saw that coming. You get ambushed by another gang of redcaps, who munge your gold. All of it. Sucker.
-//         `,
-//         hp: 0,
-//         ac: 0,
-//         atk: 2,
-//         gold: -`${emptyGold()}`
-//     }]
-// };
 
 
 
 
 
-const quests = [Crossroads, TavernFight, Healer, Redcap];
+
+
+const quests = [Crossroads, TavernFight];
 export default quests;
