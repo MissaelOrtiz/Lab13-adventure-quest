@@ -16,17 +16,17 @@ const Wolf = {
     atk: 7,
     ac: 10,
     gold: 5,
-    image: 'wolf.jpeg',
+    image: 'wolf.jpg',
 };
 
 const DarkWizard = {
     id: 3,
     name: 'Karl the unpleasant',
-    description: 'A Wizard! But not the good kind.',
+    description: 'A Wizard! But not the good kind. I mean come on, look at that fake png',
     atk: 20,
     ac: 7,
     gold: 25, 
-    image: 'wizard.png',
+    image: 'darkwizard.png',
 };
 
 const ButtSpider = {
@@ -36,7 +36,7 @@ const ButtSpider = {
     atk: 9,
     ac: 9,
     gold: 15,  
-    image: 'spider-butt.jpg',
+    image: 'buttspider.jpg',
 };
 
 const Wyvern = {
