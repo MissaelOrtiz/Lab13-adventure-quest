@@ -1,4 +1,8 @@
 import quests from '../data/quests.js';
+import { getUser } from '../local-storage-utils.js';
+import { renderHeader } from '../render-header.js';
+const user = getUser();
+renderHeader(user);
 
 const ul = document.querySelector('#quests');
 
@@ -10,3 +14,6 @@ for (let quest of quests) {
     li.append(a);
     ul.append(li);
 }
+
+
+
