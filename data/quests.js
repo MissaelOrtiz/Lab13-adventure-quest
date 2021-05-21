@@ -133,6 +133,16 @@ const Healer = {
         `,
         hp: 15,
         ac: 0,
+        atk: 0,
+        gold: -15
+    }, {
+        id: 'STR',
+        description: 'This potion is a potion of strength [10 gold]',
+        result: `
+            You quaff this strange brew, feeling your body and spirit grow stronger!
+        `,
+        hp: 0,
+        ac: 0,
         atk: 2,
         gold: -15
     }]
