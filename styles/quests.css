@@ -1,4 +1,24 @@
-img {
-    max-width: 500px;
+.quest3 .main-section{
+    display: flex;
+    width: 2000px;
+    height: 900px;
+    background-image: url("https://www.desktopbackground.org/p/2013/06/13/591501_stylish-empty-bookshelf-wallpaper-try-this-bookcase-dollhouse_640x640_h.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
+    align-items: center;
+    color: rgb(5, 47, 83);
+    background-color: white;
+}
 
+.quest3 img {
+    max-width: 800px;
+    height: 600px;
+}
+.quest3 h1{
+    font-size: 35px;
+}
+
+.quest3 p{
+    background-color: white;
 }
