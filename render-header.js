@@ -12,12 +12,19 @@ export function makeHeaderDiv(user) {
     const nameP = document.createElement('p');
     const hpP = document.createElement('p');
     const goldP = document.createElement('p');
+    const acP = document.createElement('p');
+    const atkP = document.createElement('p');
+    
+    div.classList.add('munge');
     
     nameP.textContent = `Hero: ${user.name}`;
     hpP.textContent = `HP: ${user.hp}`;
     goldP.textContent = `Gold: ${user.gold}`;
+    acP.textContent = `AC: ${user.ac}`;
+    atkP.textContent = `Attack: ${user.atk}`;
 
-    div.append(nameP, hpP, goldP);
+
+    div.append(nameP, hpP, goldP, acP, atkP);
 
     // header.append(div);
     return div;
@@ -28,4 +35,14 @@ export function renderHeader(user) {
 
     const div = makeHeaderDiv(user);
     header.append(div);
+}
+
+export function changeHeader(user) {
+    const header = document.querySelector('header');
+    const div = document.querySelector('.munge');
+
+    header.removeChild(div);
+    
+    const div2 = makeHeaderDiv(user);
+    header.append(div2);
 }

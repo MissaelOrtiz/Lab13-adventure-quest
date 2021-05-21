@@ -1,5 +1,10 @@
 import { getUser, setUser } from '../local-storage-utils.js';
 import { getMonster, battle } from './render-monster-utils.js';
+import { changeHeader, renderHeader } from '../render-header.js';
+const user = getUser();
+renderHeader(user);
+
+
 
 
 const coolZone = document.getElementById('main-section');
@@ -23,6 +28,8 @@ fightButton.addEventListener('click', () => {
     const outcome = battle(user, baddy);
     setUser(user);
     description.textContent = outcome;
+    changeHeader(user);
+
 });
 
 fleeButton.addEventListener('click', () => {

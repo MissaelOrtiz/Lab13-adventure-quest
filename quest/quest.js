@@ -1,6 +1,10 @@
 import quests from '../data/quests.js';
 import { findById } from '../utils.js';
 import { changeGold, changeHp, changeAc, changeAtk } from '../local-storage-utils.js';
+import { getUser } from '../local-storage-utils.js';
+import { changeHeader, renderHeader } from '../render-header.js';
+let user = getUser();
+renderHeader(user);
 
 const main = document.querySelector('.main-section');
 
@@ -41,6 +45,7 @@ form.addEventListener('submit', (e) => {
     changeHp(selectedChoice.hp);
     changeAc(selectedChoice.ac);
     changeAtk(selectedChoice.atk);
+    changeHeader(user);
     const resultsDiv = document.createElement('div');
     const redirectButton = document.createElement('button');
     redirectButton.textContent = 'continue with my quest!';
