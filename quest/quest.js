@@ -29,6 +29,7 @@ p.classList.add(`${quest.id}`);
 form.classList.add(`${quest.id}`);
 body.classList.add(`${quest.id}`);
 main.classList.add(`${quest.id}`);
+actMain.classList.add(`${quest.id}`);
 
 
 for (let choice of quest.choices) {
