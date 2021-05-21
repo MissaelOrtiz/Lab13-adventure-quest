@@ -20,6 +20,7 @@ const p = document.createElement('p');
 const form = document.createElement('form');
 h1.textContent = quest.title;
 img.src = `../assets/${quest.image}`;
+img.classList.add(`${quest.id}`);
 p.textContent = quest.description;
 
 
