@@ -7,6 +7,8 @@ let user = getUser();
 renderHeader(user);
 
 const main = document.querySelector('.main-section');
+const body = document.querySelector('body');
+const actMain = document.querySelector('main');
 
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
@@ -19,9 +21,14 @@ const img = document.createElement('img');
 const p = document.createElement('p');
 const form = document.createElement('form');
 h1.textContent = quest.title;
+h1.classList.add(`${quest.id}`);
 img.src = `../assets/${quest.image}`;
 img.classList.add(`${quest.id}`);
 p.textContent = quest.description;
+p.classList.add(`${quest.id}`);
+form.classList.add(`${quest.id}`);
+body.classList.add(`${quest.id}`);
+main.classList.add(`${quest.id}`);
 
 
 for (let choice of quest.choices) {
