@@ -24,17 +24,30 @@ header div {
     border-radius: 20px 20px 20px 20px;
     width: 1000px;
     height: 700px;
+    border-color: gold 5px;
 }
+
+quest2 p {
+    display: flex;
+    
+}
+
 
 .quest2 h1 {
     font-family: 'Uncial Antiqua', cursive;
-    font-size: 250%;
-
+    font-size: 40px;
+    border-radius: 40px;
 }
-/* END Taven Quest CSS targeting */
+
+.quest2 main {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 25px;
+    padding: 10px;
+}
+/* END TAVERN QUEST CSS TARGETING*/
 
 
-/* BEGIN REDCAP QUEST CSS TARGETING */
+
 .quest4 img {
     min-height: 500px;
     margin: 10px;
