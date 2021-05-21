@@ -48,7 +48,7 @@ const Crossroads = {
 
 const TavernFight = {
     id: 'quest2',
-    title: 'A squirrely evening at ye olde Publik House.',
+    title: 'A SQUIRRELY EVENING AT YE OLDE PUBLIK HOUSE.',
     map: {
         // SORT THIS OUT LATER
         top: '89%',
@@ -57,7 +57,7 @@ const TavernFight = {
     // sort this out later
     image: 'tavern.jpg',
     description: `
-        You walk into a tavern and immediately notice shit is bananas.  It would seem a particularly shady Redcap was playing a game of Liar's Dice with a Ranger who caught the Redcap cheating.  After a few minutes of escalating, yet barely undecipherable dialogue between the two, the Ranger flips the table over strewing game pieces and flagons of ale in every direction.  He unsheaths his sword and yells "You've attempted to swindle the wrong person in this village you filth! Prepare to defend yourself, if you can!". The barkeep puts togeter a betting pool and asks if you'd like to place a wager.
+        You walk into a tavern and immediately notice shit is bananas.  It would seem a particularly shady Redcap was caught cheating in a game of Liar's Dice with a well-known Ranger.  After a few minutes of escalating, yet barely undecipherable dialogue between the two, the Ranger flips the table over scattering game pieces and flagons of ale in every direction.  He unsheaths his sword and yells "You've attempted to swindle the wrong person in this village you stubby little man! Prepare to defend yourself, if you can!".  The Redcap materilizes a sword from his cloak. The barkeep beings taking bets.
         
     `,
     choices: [{
