@@ -60,3 +60,7 @@ export function userDied() {
     if (user.hp <= 0) return true;
     return false;
 }
+
+// export function userIsReadyForBoss() {
+
+// }
