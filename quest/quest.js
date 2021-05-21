@@ -31,7 +31,6 @@ body.classList.add(`${quest.id}`);
 main.classList.add(`${quest.id}`);
 actMain.classList.add(`${quest.id}`);
 
-
 for (let choice of quest.choices) {
     const label = document.createElement('label');
     const input = document.createElement('input');
