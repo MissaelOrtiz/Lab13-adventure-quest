@@ -32,9 +32,9 @@ export function makeHeaderDiv(user) {
 
 export function renderHeader(user) {
     const header = document.querySelector('header');
-
-    const div = makeHeaderDiv(user);
-    header.append(div);
+    let dive = document.createElement('div');
+    dive = makeHeaderDiv(user);
+    header.append(dive);
 }
 
 export function changeHeader(user) {
@@ -42,7 +42,7 @@ export function changeHeader(user) {
     const div = document.querySelector('.munge');
 
     header.removeChild(div);
-    
-    const div2 = makeHeaderDiv(user);
+    let div2 = document.createElement('div');
+    div2 = makeHeaderDiv(user);
     header.append(div2);
 }

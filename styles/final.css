@@ -1,0 +1,54 @@
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-2px, 0px) rotate(1deg); }
+    30% { transform: translate(2px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-2px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake {
+    animation: shake 1.0s;
+    animation-iteration-count: infinite;
+    color: red;
+}
+button {
+    margin-top: 40px;
+}
+
+img {
+    min-height: 500px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Eagle Lake', cursive;
+    color:rgb(84, 13, 0);
+}
+
+p {
+    display: flex;
+    font-family: 'Nanum Brush Script', cursive;
+    background-color: rgba(106, 76, 71, 0.29);
+    border-radius: 40px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 10px double maroon;
+}
+
+main {
+    display: flex;
+    font-family: 'Eagle Lake', cursive;
+    background-color: rgba(104, 70, 64, 0.276);
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}

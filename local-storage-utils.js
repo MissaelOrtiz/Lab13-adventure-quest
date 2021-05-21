@@ -61,6 +61,10 @@ export function userDied() {
     return false;
 }
 
-// export function userIsReadyForBoss() {
-
-// }
+export function userIsReadyForBoss() {
+    const user = getUser();
+    if (user.atk >= 12) {
+        return true;
+    }
+    return false;
+}
