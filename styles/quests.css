@@ -1,8 +1,19 @@
-img {
-    max-width: 500px;
-
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
 }
 
+header div {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    }
+
+/* BEGIN TAVERN QUEST CSS TARGETING */
 .quest2 {
     background-color: darkslategray;
     color: floralwhite;
@@ -11,4 +22,69 @@ img {
 
 .quest2 img {
     border-radius: 20px 20px 20px 20px;
+    width: 1000px;
+    height: 700px;
+}
+
+.quest2 h1 {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 250%;
+
+}
+/* END Taven Quest CSS targeting */
+
+
+/* BEGIN REDCAP QUEST CSS TARGETING */
+.quest4 img {
+    min-height: 500px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.quest4 h1 {
+    font-size: 50px;
+    font-family: 'Eagle Lake', cursive;
+    color:rgb(84, 13, 0);
+}
+
+.quest4 p {
+    display: flex;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+    background-color: rgba(106, 76, 71, 0.29);
+    border-radius: 40px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 10px double maroon;
+}
+
+.quest4 main {
+    display: flex;
+    font-family: 'Eagle Lake', cursive;
+    font-size: 20px;
+    background-color: rgba(104, 70, 64, 0.276);
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.quest4 form {
+    display: flex;
+    font-family: 'Eagle Lake', cursive;
+    font-size: 20px;
+    background-color: rgba(108, 50, 40, 0.276);
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+form button {
+    padding: 10px;
+    max-width: fit-content;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1.25rem;
 }

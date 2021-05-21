@@ -57,11 +57,12 @@ const TavernFight = {
     // sort this out later
     image: 'tavern.jpg',
     description: `
-        You walk into a tavern and immediately notice shit is bananas.  It would seem a particularly shady Redcap was playing a game of Liar's Dice with a Ranger who caught the Redcap cheating.  After a few minutes of escalating, yet barely undecipherable dialogue between the two, the Ranger flips the table over strewing game pieces and flagons of ale in every direction.  He unsheaths his sword and yells "You've attempted to swindle the wrong person in this village you filth! Prepare to defend yourself, if you can!". 
+        You walk into a tavern and immediately notice shit is bananas.  It would seem a particularly shady Redcap was playing a game of Liar's Dice with a Ranger who caught the Redcap cheating.  After a few minutes of escalating, yet barely undecipherable dialogue between the two, the Ranger flips the table over strewing game pieces and flagons of ale in every direction.  He unsheaths his sword and yells "You've attempted to swindle the wrong person in this village you filth! Prepare to defend yourself, if you can!". The barkeep puts togeter a betting pool and asks if you'd like to place a wager.
+        
     `,
     choices: [{
         id: 'FIGHT',
-        description: 'The barkeep starts a betting pool and asks if you would like to submit a wager.',
+        description: 'Jump in and fight them BOTH',
         result: `
             You win 10 gold, lose 5 HP 
         `,
