@@ -14,7 +14,7 @@ export function battle(user, baddy) {
 
     } else if (user.ac < baddy.atk) {
         user.hp = user.hp - (baddy.atk - user.ac);
-        return `You lose! You suck.`;
+        return `You lose! You suck. You took damage and are now at ${user.hp}hp!`;
     } else {
         return `You exchange blows but then realize you have more in common than different and find love in a hopeless place`;
     }

@@ -13,6 +13,7 @@ const baddy = getMonster();
 const h1 = document.createElement('h1');
 const monstaImage = document.createElement('img');
 const description = document.createElement('p');
+const buttonContainer = document.createElement('div');
 
 const fightButton = document.createElement('button');
 const fleeButton = document.createElement('button');
@@ -21,7 +22,8 @@ h1.textContent = baddy.name;
 monstaImage.src = `../assets/${baddy.image}`;
 description.textContent = baddy.description;
 fightButton.textContent = 'Fight this weirdo';
-fleeButton.textContent = 'Run awaaaaaaaaaaaaaay!';
+fleeButton.textContent = 'Run awaaaaaay!';
+buttonContainer.classList.add('buttons');
 
 fightButton.addEventListener('click', () => {
     const user = getUser();
@@ -29,11 +31,12 @@ fightButton.addEventListener('click', () => {
     setUser(user);
     description.textContent = outcome;
     changeHeader(user);
-
+    setTimeout(() => window.location = '../list', 2000);
 });
 
 fleeButton.addEventListener('click', () => {
     window.location = '../list';
 });
 
-coolZone.append(h1, monstaImage, description, fightButton, fleeButton);
+buttonContainer.append(fightButton, fleeButton);
+coolZone.append(h1, monstaImage, description, buttonContainer);
