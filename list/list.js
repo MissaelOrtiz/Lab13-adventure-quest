@@ -1,5 +1,5 @@
 import quests from '../data/quests.js';
-import { getUser, userIsReadyForBoss } from '../local-storage-utils.js';
+import { getUser, userIsReadyForBoss, userDied } from '../local-storage-utils.js';
 import { renderHeader } from '../render-header.js';
 const user = getUser();
 renderHeader(user);
@@ -19,6 +19,11 @@ for (let quest of quests) {
 if (userIsReadyForBoss() === true) {
     finalButton.classList.toggle('hidden');
 }
+
 finalButton.addEventListener('click', () => {
     window.location.replace('../final/');
 });
+
+if (userDied() === true) {
+    window.location = '../final';
+}
