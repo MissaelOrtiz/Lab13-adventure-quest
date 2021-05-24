@@ -34,14 +34,14 @@ body {
 
 @keyframes slide-right {
     from {
-      transform: translate3d(1200%, 0, 0);
-      visibility: visible;
+    transform: translate3d(1200%, 0, 0);
+    visibility: visible;
     }
-  
+
     to {
-      transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     }
-  }
+}
 
 /* @keyframes slide-right {
     from {
