@@ -4,6 +4,7 @@ let user = getUser();
 renderHeader(user);
 
 const finalButton = document.getElementById('last');
+const playagainButton = document.getElementById('play-again');
 
 finalButton.addEventListener('click', () => {
     const main = document.querySelector('main');
@@ -33,6 +34,7 @@ finalButton.addEventListener('click', () => {
     statdiv.append(pHP, pAC, pATK, pGP);
     newSection.append(h1, p, statdiv);
     main.append(newSection);
+    playagainButton.classList.toggle('hidden');
 });
 
 if (userDied() === true) {
@@ -63,4 +65,10 @@ if (userDied() === true) {
     statdiv.append(pHP, pAC, pATK, pGP);
     newSection.append(h1, p, statdiv);
     main.append(newSection);
+    playagainButton.classList.toggle('hidden');
 }
+
+playagainButton.addEventListener('click', () => {
+    localStorage.removeItem('USER');
+    window.location = '../';
+});
