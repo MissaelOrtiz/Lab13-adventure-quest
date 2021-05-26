@@ -63,7 +63,7 @@ export function userDied() {
 
 export function userIsReadyForBoss() {
     const user = getUser();
-    if (user.atk >= 12) {
+    if (user.atk >= 12 || user.gold >= 50) {
         return true;
     }
     return false;
