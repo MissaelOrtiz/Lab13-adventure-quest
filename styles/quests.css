@@ -6,10 +6,64 @@ header {
 }
 
 header div {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+    }
+
+/* BEGIN TAVERN QUEST CSS TARGETING */
+.quest2 {
+    background-color: darkslategray;
+    color:goldenrod;
+    image-rendering: pixelated;
 }
+
+.quest2 p {
+    display: flex;
+    border: gold 2px solid;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    padding: 10px;
+    color: greenyellow;
+    
+    
+}
+
+.quest2 h1 {
+    font-family: 'Uncial Antiqua', cursive;
+    color: orange;
+    font-size: 34px;
+    border-radius: 40px;
+}
+
+.quest2 img {
+    border-radius: 20px 20px 20px 20px;
+    width: 1000px;
+    height: 700px;
+
+}
+
+.quest2 .main-section p {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 25px;
+    color:darkgoldenrod;
+    text-align: center;
+    border: none;
+}
+
+.quest2 form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 20px;
+    color: yellow;
+
+}
+/* END TAVERN QUEST CSS TARGETING*/
+
+
 
 .quest3 .main-section{
     display: flex;
