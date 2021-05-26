@@ -1,0 +1,30 @@
+#the-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p span {
+    font-family: Tangerine;
+    font-weight: bold;
+}
+
+.fancy {
+    font-family: Tangerine;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+section {
+    background-color: rgba(197, 201, 182, 0.425);
+}
+
+body {
+    background-color: rgb(57, 63, 68);
+}
+
+main {
+    background-image: url('../assets/castle.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
