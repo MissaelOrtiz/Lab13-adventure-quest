@@ -2,9 +2,11 @@ import quests from '../data/quests.js';
 import { findById } from '../utils.js';
 import { changeGold, changeHp, changeAc, changeAtk } from '../local-storage-utils.js';
 import { getUser } from '../local-storage-utils.js';
-import { changeHeader, renderHeader } from '../render-header.js';
+import { changeHeader, renderHeader, makeHeaderDiv } from '../render-header.js';
+
 let user = getUser();
 renderHeader(user);
+makeHeaderDiv(user);
 
 const main = document.querySelector('.main-section');
 const body = document.querySelector('body');

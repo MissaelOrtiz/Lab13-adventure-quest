@@ -38,6 +38,15 @@ footer {
     box-shadow: var(--shadow);
 }
 
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Tangerine;
+    text-align: center;
+    padding: 5px;
+
+}
+
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -81,28 +90,28 @@ footer {
 li:nth-child(1) {
     background-color: rgba(127, 165, 12, 0.673);
     position: relative;
-    bottom: 200px;
-    left: 400px;
+    bottom: 50px;
+    left: 350px;
 }
 /* Bar fight */
 li:nth-child(2) {
     background-color: rgba(169, 133, 102, 0.879);
     position: relative;
-    top: 200px;
+    top: 400px;
     left: 350px;
 }
 /* Healing */
 li:nth-child(3) {
     background-color: rgba(134, 110, 254, 0.708);
     position: relative;
-    bottom: 100px;
+    top: 450px;
     right: 4px;
 }
 /* Redcaps */
 li:nth-child(4) {
     background-color: rgba(233, 13, 49, 0.66);
     position: relative;
-    top: 380px;
+    top: 600px;
     right: 50px;
 }
 
@@ -119,7 +128,6 @@ li:nth-child(4) {
     border-radius: 30px;
     width: max-content;
     position: relative;
-    top: 100px;
     right: 250px;
 }
 
@@ -140,7 +148,61 @@ a {
     text-decoration: none;
 }
 
+#final {
+    color:rgb(255, 255, 255);
+    background-color: rgba(87, 15, 15, 0.639);
+    font-family: 'Charm', cursive;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 7px double goldenrod;
+    border-radius: 30px;
+    width: max-content;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
 .hidden {
     display: none;
 }
 
+.munge {
+    display: flex;
+    justify-content: center;
+    border-top: solid 15px #3f6a16;
+    background-color: #d5a338cd;
+    color:rgb(34, 6, 99);
+    text-shadow: 2px 2px 5px rgb(16, 2, 57);
+    font-size: 1.8rem;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+}
+
+.munge p:nth-child(1) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(2) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(3) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(4) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(5) {
+    animation: 5s slide-right;
+}
+
+@keyframes slide-right {
+    from {
+    transform: translate3d(1200%, 0, 0);
+    visibility: visible;
+    }
+
+    to {
+    transform: translate3d(0, 0, 0);
+    }
+}
