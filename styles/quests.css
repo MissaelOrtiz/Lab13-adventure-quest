@@ -1,8 +1,9 @@
 header {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-top: 20px;
     padding: 10px;
+    height: 150px;
 }
 
 header div {
@@ -10,7 +11,23 @@ header div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    box-shadow: 5px 2px 5px #a8a6a6;
+}
+
+body {
+    background-color:rgba(228, 228, 167, 0.55);
+    overflow: scroll;
+    position: absolute;
+}
+
+form button {
+    padding: 10px;
+    max-width: fit-content;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    box-shadow: 5px 2px 5px #544f4f;
     }
 
 /* BEGIN TAVERN QUEST CSS TARGETING */
@@ -59,12 +76,12 @@ header div {
     font-family: 'Uncial Antiqua', cursive;
     font-size: 20px;
     color: yellow;
-
 }
 /* END TAVERN QUEST CSS TARGETING*/
 
 
 
+/* Healer: quest3 */
 .quest3 .main-section{
     display: flex;
     width: 2000px;
@@ -90,56 +107,72 @@ header div {
     background-color: white;
 }
 
+/* Redcaps: quest 4 */
 .quest4 img {
     min-height: 500px;
     margin: 10px;
     border-radius: 30px;
+    padding-bottom: 20px;
 }
 
 .quest4 h1 {
     font-size: 50px;
     font-family: 'Eagle Lake', cursive;
     color:rgb(84, 13, 0);
+    padding: 20px;
+    text-shadow: 2px 5px 5px #6f5a5a;
 }
 
 .quest4 p {
     display: flex;
     font-family: 'Nanum Brush Script', cursive;
-    font-size: 30px;
-    background-color: rgba(106, 76, 71, 0.29);
+    font-size: 40px;
+    background-color: rgba(106, 76, 71, 0.838);
     border-radius: 40px;
     padding: 10px;
     margin: 5px;
     text-align: center;
     border: 10px double maroon;
+    box-shadow: 5px 2px 5px #503232;
 }
 
 .quest4 main {
     display: flex;
     font-family: 'Eagle Lake', cursive;
     font-size: 20px;
-    background-color: rgba(104, 70, 64, 0.276);
     flex-direction: column;
     padding: 10px;
     margin: 10px;
+    background-image: url('../assets/hovel.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    background-position: center;
+    overflow: scroll;
+    background-color: rgba(104, 48, 24, 0.536);
 }
 
 .quest4 form {
     display: flex;
     font-family: 'Eagle Lake', cursive;
     font-size: 20px;
-    background-color: rgba(108, 50, 40, 0.276);
+    background-color: rgba(155, 83, 71, 0.803);
     flex-direction: column;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
+    border: 10px double maroon;
+    box-shadow: 5px 2px 5px #503232;
 }
 
-form button {
-    padding: 10px;
-    max-width: fit-content;
+.quest4 div {
+    display: flex;
+    align-items: center;
+    background-color: rgba(196, 187, 86, 0.714);
+    padding: 20px;
+    margin: 20px;
     align-self: center;
-    margin-top: 20px;
-    border-radius: 10px;
-    font-size: 1.25rem;
+    border-radius: 20px;
 }
