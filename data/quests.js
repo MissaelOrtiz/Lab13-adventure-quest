@@ -160,16 +160,16 @@ const Redcap = {
     // sort this out later
     image: 'redcap.jpg',
     description: `
-        Your path is blocked by a crumbly, decaying cabin that is guarded by a gang of redcaps who excitedly chitter and cackle at you from atop the roof. 'Pass our test to continue on the path,' screams one particulalry ugly redcap. The other redcaps start yeeting rotten fruit at you, which you narrowly dodge as they all repeatedly shout 'EAT IT!'
+        Your path is blocked by a crumbly, decaying cabin that is guarded by a gang of redcaps who excitedly chitter and cackle at you from atop the roof. 'Pass our test to continue on the path,' screams one particularly ugly redcap. The other redcaps start yeeting rotten fruit at you, which you narrowly dodge as they all repeatedly shout 'EAT IT!'
     `,
     choices: [{
         id: 'EATIT',
         description: 'Eat the rotten fruit',
         result: `
-            Well, you've had worse! You eat the rotten fruit, getting more and more nauseous with each piece. You yarf off on their doorstep, and they taunt you and let you pass, a little worse for wear.
+            Well, you've had worse! You eat the rotten fruit, getting more and more nauseous with each piece. You yarf off on their doorstep, but they let you pass. While you lose 5 hp from all that spewing, your AC has been bolstered by 2 because of how much of an absolute tank you proved yourself to be!
         `,
         hp: -5,
-        ac: 0,
+        ac: 2,
         atk: 0,
         gold: 0
     }, {
@@ -186,7 +186,7 @@ const Redcap = {
         id: 'FLEE',
         description: 'Ignore these bozos and find another path',
         result: `
-            You think you are sooooo clever, finding a new path. Unfortunately they saw that coming. You get ambushed by another gang of redcaps, who munge your gold. All of it. Sucker.
+            You think you are sooooo clever, finding a new path. Unfortunately they saw that coming. You get ambushed by another gang of redcaps, who munge your gold. All of it. Sucker. But hey, you're so angry from this encounter that your attack is boosted by 2!
         `,
         hp: 0,
         ac: 0,

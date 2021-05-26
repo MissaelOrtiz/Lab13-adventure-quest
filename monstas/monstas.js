@@ -32,6 +32,8 @@ fightButton.addEventListener('click', () => {
     description.textContent = outcome;
     changeHeader(user);
     setTimeout(() => window.location = '../list', 2000);
+    fightButton.classList.toggle('hidden');
+    fleeButton.classList.toggle('hidden');
 });
 
 fleeButton.addEventListener('click', () => {
