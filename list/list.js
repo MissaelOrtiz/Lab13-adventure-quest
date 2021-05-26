@@ -8,11 +8,20 @@ const ul = document.querySelector('#quests');
 const finalButton = document.getElementById('final');
 
 for (let quest of quests) {
+    const questIsCompleted = user.completed[quest.id];
     const li = document.createElement('li');
-    const a = document.createElement('a');
-    a.href = `../quest/?id=${quest.id}`;
-    a.textContent = quest.title;
-    li.append(a);
+    
+    if (!questIsCompleted) {
+        const a = document.createElement('a');
+        a.href = `../quest/?id=${quest.id}`;
+        a.textContent = quest.title;
+        li.append(a);
+    } else {
+        const span = document.createElement('span');
+        span.style.textDecoration = 'line-through';
+        span.textContent = quest.title;
+        li.append(span);
+    }
     ul.append(li);
 }
 

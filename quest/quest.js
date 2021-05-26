@@ -1,6 +1,6 @@
 import quests from '../data/quests.js';
 import { findById } from '../utils.js';
-import { changeGold, changeHp, changeAc, changeAtk } from '../local-storage-utils.js';
+import { changeGold, changeHp, changeAc, changeAtk, completeQuest } from '../local-storage-utils.js';
 import { getUser } from '../local-storage-utils.js';
 import { changeHeader, renderHeader, makeHeaderDiv } from '../render-header.js';
 
@@ -67,6 +67,6 @@ form.addEventListener('submit', (e) => {
     resultsDiv.appendChild(redirectButton);
     form.remove();
     main.append(resultsDiv);
-    
+    completeQuest(quest.id);
 });
 main.append(h1, img, p, form);
