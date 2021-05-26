@@ -26,9 +26,21 @@ form button {
     align-self: center;
     margin-top: 20px;
     border-radius: 10px;
-    font-size: 1.25rem;
     box-shadow: 5px 2px 5px #544f4f;
     }
+
+.quest1 img {
+    width: 600px;
+}
+
+.quest1 p {
+    text-align: center;
+}
+
+.quest1 h1 {
+    font-size: 30px;
+}
+
 
 /* BEGIN TAVERN QUEST CSS TARGETING */
 .quest2 {
@@ -109,24 +121,25 @@ form button {
 
 /* Redcaps: quest 4 */
 .quest4 img {
-    min-height: 500px;
+    min-height: 400px;
     margin: 10px;
     border-radius: 30px;
     padding-bottom: 20px;
 }
 
 .quest4 h1 {
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Eagle Lake', cursive;
     color:rgb(84, 13, 0);
     padding: 20px;
     text-shadow: 2px 5px 5px #6f5a5a;
+    margin-bottom: 50px;
 }
 
 .quest4 p {
     display: flex;
     font-family: 'Nanum Brush Script', cursive;
-    font-size: 40px;
+    font-size: 25px;
     background-color: rgba(106, 76, 71, 0.838);
     border-radius: 40px;
     padding: 10px;
@@ -157,7 +170,7 @@ form button {
 .quest4 form {
     display: flex;
     font-family: 'Eagle Lake', cursive;
-    font-size: 20px;
+    font-size: 15px;
     background-color: rgba(155, 83, 71, 0.803);
     flex-direction: column;
     padding: 20px;
@@ -175,4 +188,47 @@ form button {
     margin: 20px;
     align-self: center;
     border-radius: 20px;
+}
+
+.munge {
+    display: flex;
+    justify-content: center;
+    border-top: solid 15px #90323d;
+    background-color: #8C7A6B;
+    font-size: 1.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.munge p:nth-child(1) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(2) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(3) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(4) {
+    animation: 5s slide-right;
+}
+.munge p:nth-child(5) {
+    animation: 5s slide-right;
+}
+
+@keyframes slide-right {
+    from {
+    transform: translate3d(1200%, 0, 0);
+    visibility: visible;
+    }
+
+    to {
+    transform: translate3d(0, 0, 0);
+    }
+}
+
+button {
+    background-color: rgb(233, 215, 140);
+    font-family: 'Tangerine', cursive;
+    font-size: 1.8rem;
 }
