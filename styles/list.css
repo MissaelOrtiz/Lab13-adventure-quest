@@ -19,7 +19,7 @@ main {
 section {
     background-color: var(--color5);
     width: 1000px;
-    max-width: 80%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,13 +29,6 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
 }
 
 h1 {
@@ -94,36 +87,36 @@ footer {
     background-image: url('../assets/MAP.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
-    position: static;
+    background-size: 90%;
+    position: fixed;
 }
 /* Crossroads */
 li:nth-child(1) {
     background-color: rgba(127, 165, 12, 0.673);
     position: relative;
-    top: 20px;
-    left: 350px;
+    top: 10px;
+    left: 15px;
 }
 /* Bar fight */
 li:nth-child(2) {
     background-color: rgba(169, 133, 102, 0.879);
-    position: fixed;
-    top: 700px;
-    right: 100px;
+    position: relative;
+    top: 380px;
+    left: 140px;
 }
 /* Healing */
 li:nth-child(3) {
     background-color: rgba(134, 110, 254, 0.708);
     position: relative;
-    top: 450px;
-    right: 250px;
+    bottom: 130px;
+    left: 480px;
 }
 /* Redcaps */
 li:nth-child(4) {
     background-color: rgba(233, 13, 49, 0.66);
-    position: static;
-    top: 600px;
-    right: 50px;
+    position: relative;
+    top: 360px;
+    right: 350px;
 }
 
 /*Go looking for trouble*/
@@ -139,7 +132,8 @@ li:nth-child(4) {
     border-radius: 30px;
     width: max-content;
     position: relative;
-    right: 250px;
+    top: 30%;
+    left: 30%;
 }
 
 li {
@@ -170,8 +164,8 @@ a {
     border-radius: 30px;
     width: max-content;
     position: relative;
-    top: 60px;
-    left: 10px;
+    top: 40%;
+    left: 2%;
 }
 
 .hidden {
